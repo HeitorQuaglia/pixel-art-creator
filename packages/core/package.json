@@ -1,0 +1,21 @@
+{
+  "name": "@pixel-art/core",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "pako": "^2.1.0",
+    "pngjs": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/pako": "^2.0.3",
+    "typescript": "^5.7.0",
+    "vitest": "^3.1.0"
+  }
+}
