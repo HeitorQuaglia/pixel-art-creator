@@ -1,0 +1,16 @@
+appId: com.pixelart.creator
+productName: Pixel Art Creator
+directories:
+  output: release
+files:
+  - dist/**/*
+  - src/renderer/build/**/*
+  - node_modules/**/*
+linux:
+  target: [AppImage, deb]
+  category: Graphics
+mac:
+  target: [dmg]
+  category: public.app-category.graphics-design
+win:
+  target: [nsis]
