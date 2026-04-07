@@ -47,7 +47,7 @@ export function deserializeProject(json: string): Document {
 }
 
 function compressLayerData(data: Uint8ClampedArray): string {
-  const compressed = deflate(data);
+  const compressed = deflate(new Uint8Array(data.buffer, data.byteOffset, data.byteLength));
   let binary = '';
   for (let i = 0; i < compressed.length; i++) {
     binary += String.fromCharCode(compressed[i]);
